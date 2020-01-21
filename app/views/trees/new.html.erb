@@ -1,0 +1,21 @@
+<h2>Favorite tree not in our database? Add a new tree!</h2>
+
+<%= form_for @tree do |f| %>
+    <label>Common name:</label>
+    <%= f.text_field :common_name %>
+    <p class="error"><%= @tree.errors.messages[:common_name][0]%></p>
+    <br>
+    <label>Scientific name:</label>
+    <%= f.text_field :binomial_name %>
+    <p class="error"><%= @tree.errors.messages[:binomial_name][0]%></p>
+    <br>
+    <label>Type:</label>
+    <%= f.select :category, %w(deciduous coniferous), prompt: true %>
+    <p class="error"><%= @tree.errors.messages[:category][0]%></p>
+    <br>
+    <label>Favorite tree of:</label>
+    <%= f.collection_select :user_ids, User.all, :id, :name %>
+    <br><br>
+    <%= f.submit "Create Tree" %>
+
+<% end %>

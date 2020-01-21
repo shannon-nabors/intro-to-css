@@ -1,0 +1,14 @@
+<h2>Edit profile for <%= @user.name %></h2>
+
+<%= form_for @user do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <p class="error"><%= @user.errors.messages[:name][0]%></p>
+    <%= f.label :username %>
+    <%= f.text_field :username %><br>
+    <p class="error"><%= @user.errors.messages[:username][0]%></p>
+    <label>Favorite trees:</label>
+    <%= f.collection_check_boxes :tree_ids, Tree.all, :id, :common_name %>
+    <br><br>
+    <%= f.submit "Update" %>
+<% end %>
