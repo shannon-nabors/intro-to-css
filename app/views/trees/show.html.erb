@@ -1,5 +1,7 @@
-<h1> <%= @tree.common_name %> </h1>
+<div class="heading secondary-heading"> <%= @tree.common_name %> </div>
 
-    <img src=<%= @tree.image %>>
+<div class="wrapper">
+    <img class="show-image" src=<%= @tree.image %>>
     <p>Scientific name: <%= @tree.binomial_name %></p>
     <p>Category: <%= @tree.category %></p>
+</div>
