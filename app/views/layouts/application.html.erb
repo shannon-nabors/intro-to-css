@@ -10,9 +10,11 @@
   </head>
 
   <body>
-    <%= link_to "Home", home_path %>
-    <%= link_to "Browse users", users_path %>
-    <%= link_to "Browse trees", trees_path %>
+    <div class="ui secondary menu">
+      <%= link_to "Home", home_path, class: "item" %>
+      <%= link_to "Browse users", users_path, class: "item" %>
+      <%= link_to "Browse trees", trees_path, class: "item" %>
+    </div>
     <%= yield %>
   </body>
 </html>

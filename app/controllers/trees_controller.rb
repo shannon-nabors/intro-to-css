@@ -23,6 +23,6 @@ class TreesController < ApplicationController
     private
 
     def tree_params
-        params.require(:tree).permit(:common_name, :binomial_name, :category, :user_ids)
+        params.require(:tree).permit(:common_name, :binomial_name, :category, :user_ids, :image)
     end
 end
