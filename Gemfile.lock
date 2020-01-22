@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/doabit/semantic-ui-sass.git
+  revision: 54e508527b1271b118346b03143fbb93a23027fe
+  specs:
+    semantic-ui-sass (2.4.2.0)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,6 +65,8 @@ GEM
       zeitwerk (~> 2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    autoprefixer-rails (9.7.4)
+      execjs
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
@@ -72,9 +81,11 @@ GEM
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
     childprocess (3.0.0)
+    commonjs (0.2.7)
     concurrent-ruby (1.1.5)
     crass (1.0.6)
     erubi (1.9.0)
+    execjs (2.7.0)
     ffi (1.12.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -82,6 +93,12 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
+    less (2.6.0)
+      commonjs (~> 0.2.7)
+    less-rails (4.0.0)
+      actionpack (>= 4)
+      less (~> 2.6.0)
+      sprockets (>= 2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -143,6 +160,11 @@ GEM
     regexp_parser (1.6.0)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.2.1)
@@ -156,6 +178,9 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    semantic-ui-rails (0.18.0)
+      autoprefixer-rails
+      less-rails
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -209,6 +234,8 @@ DEPENDENCIES
   rails (~> 6.0.1)
   sass-rails (>= 6)
   selenium-webdriver
+  semantic-ui-rails
+  semantic-ui-sass!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)

@@ -1,7 +1,6 @@
-<div class="heading secondary-header"> <%= @user.name %> </div>
+<h1> <%= @user.name %> </h1>
 
-<div class="wrapper">
-    <img class="tree-image" src=<%= @user.image %>>
+    <img src=<%= @user.image %>>
     <p>Username: <%= @user.username %></p>
     <p>Favorite trees:</p>
     <ul>
@@ -9,5 +8,4 @@
             <li><%= link_to tree.common_name, tree %></li>
         <% end %>
     </ul>
-    <%= link_to "Update Profile", edit_user_path, class: "tree-page-link" %>
-</div>
+    <%= link_to "Update Profile", edit_user_path %>

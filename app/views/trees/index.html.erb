@@ -1,9 +1,7 @@
-<div class="heading secondary-header">All Trees</div>
+<h1>All Trees</h1>
 
-<div class="gallery">
     <% @all_trees.each do |t| %>
         <%= link_to tree_path(t) do %>
-            <%= image_tag t.image, class: "gallery-image"%>
+            <%= image_tag t.image%>
         <% end %>
     <% end %>
-</div>

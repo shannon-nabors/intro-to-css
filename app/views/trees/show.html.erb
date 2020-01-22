@@ -1,7 +1,5 @@
-<div class="heading secondary-header"> <%= @tree.common_name %> </div>
+<h1> <%= @tree.common_name %> </h1>
 
-<div class="wrapper">
-    <img class="tree-image" src=<%= @tree.image %>>
-    <p>Scientific name: <span class="sci-name"><%= @tree.binomial_name %><span></p>
+    <img src=<%= @tree.image %>>
+    <p>Scientific name: <%= @tree.binomial_name %></p>
     <p>Category: <%= @tree.category %></p>
-</div>
