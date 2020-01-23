@@ -50,9 +50,13 @@ body {
     margin: 0px 50px 0px 0px;
 }
 
-.form {
+.my-form {
     margin: 50px 25vw;
     padding: 20px;
     border: 1px solid lightgray;
     border-radius: 10px;
+}
+
+#navbar {
+    margin-bottom: 0px;
 }
